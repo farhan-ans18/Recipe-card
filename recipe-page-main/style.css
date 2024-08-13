@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+
+--Stone100: hsl(30, 54%, 90%);
+--Stone150: hsl(30, 18%, 87%);
+--Stone600: hsl(30, 10%, 34%);
+--Stone900: hsl(24, 5%, 18%);
+
+--Brown800: hsl(14, 45%, 36%);
+
+--Rose800: hsl(332, 51%, 32%);
+--Rose50: hsl(330, 100%, 98%);
+}
+
+.body{
+    display: flex;
+    background-color: var(--Stone100);
+}
+
+.container{
+  
+   margin: 3rem auto;
+   width: 650px;
+   background-color: var(--White);
+   border-radius: 20px;
+}
+.img{
+    width: 100%;
+    height: 300px ;
+    padding: 30px;
+    display: flex;
+}
+.img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.main{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+h1{
+    font-size: 35px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+p{
+    padding-top: 20px;
+    font-family: "Outfit", sans-serif;
+    color: var(--Stone600);
+}
+.preparation{
+    width: 100%;
+    height: 170px;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: var(--Rose50);
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+}
+
+.preparation h5{
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: var(--Rose800);
+    font-weight: 600;
+}
+.preparation li::marker{
+    color: var(--Rose800);
+    font-size: 10px;
+}
+.preparation ul {
+    list-style-type: square; 
+    list-style-position: inside;
+    margin-left: 5px;
+    font-size: 15px;
+
+}
+.preparation ul li{
+    padding: 5px;
+    color: var(--Stone600);
+}
+
+.preparation ul li b{
+    margin-left: 10px;
+    color: var(--Stone600);
+}
+
+
+
+/* .preparation ul li {
+    margin-bottom: 10px;
+    position: relative; /* Position relative for pseudo-element 
+    margin-bottom: 10px; 
+    padding-left: 40px;
+    font-size: 15px;
+    color: var(--Stone600);
+}
+.preparation ul li::before {
+    content: '•';  Use a bullet character 
+    position: absolute;
+    left: 10px;
+    color: var(--Rose800);  Set bullet color 
+    font-size: 20px;  Size of the bullet 
+} */
+
+
+
+.ingredients h3{
+    font-size: 25px;
+    padding-top: 20px;
+    color: var(--Brown800);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+.ingredients ul {
+    list-style-type: square; 
+    margin: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+
+}
+
+/* .ingredients ul li {
+    margin-bottom: 10px;  Add space between list items 
+    position: relative;  Position relative for pseudo-element 
+    padding-left: 20px;  Space for bullet 
+}
+.ingredients ul li::before {
+    content: square; Use a bullet character 
+    list-style-type: square; 
+    position: absolute;
+    left: 10px ;
+    color: #007BFF; Set bullet color 
+    font-size: 20px;  Size of the bullet 
+} */
+
+.ingredients ul li{
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: var(--Stone600);
+}
+.ingredients ul li::marker{
+    color: var(--Brown800);
+    font-size: 10px;
+}
+
+hr{
+    color: var(--Brown800);
+}
+
+.instructions h3{
+    font-size: 25px;
+    padding-top: 20px;
+    color: var(--Brown800);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+.instructions ol {
+   margin: 20px;
+   font-family: "Outfit", sans-serif;
+   font-size: 15px;
+}
+.instructions ol li{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    color: var(--Stone600);
+   
+  }
+
+.instructions ol li::marker{
+    color: var(--Brown800);
+    font-weight: bold;
+}
+
+.nutrition h3{
+    font-size: 25px;
+    padding-top: 20px;
+    color: var(--Brown800);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+#first td{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone600);
+  font-size: 15px;
+
+}
+
+.border td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: var(--Stone600);
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+   padding-left: 20px;
+  }
+
+#last td{
+    padding: 15px;
+    color: var(--Stone600);
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+   }
+ 
+.border td span{ 
+    color: var(--Brown800);
+    font-weight: bold;
+  }
+#last td span{ 
+    color: var(--Brown800);
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 480px) {
+   .img img{
+    width: auto;
+   }
+  }
